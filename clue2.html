@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clue Page 2</title>
+  <link rel="stylesheet" type="text/css" href="confetti.css">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/uq06sbx.jpeg');
+    background-size: cover;
+    background-position: center;
+  background-attachment: fixed; /* Ensures the background image remains fixed */
+  color: white; /* Set text color to white for better visibility */
+  font-family: "Georgia", sans-serif; /* Set font family */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align text */
+  min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  }
+  #button {
+    margin-top: 20px; /* Add some space above the button */
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #ff6600; /* Orange background color */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Button text size */
+  }
+</style>
+</head>
+<body>
+  <h1>Clue Page 2</h1>
+  <p>Clue: Next, let’s journey to a place where silence reigns supreme. Seek near the haven of hushed whispers and pages turning softly, and you’ll find your next clue.</p>
+  <p>Enter your answer:</p>
+  <input type="text" id="answer2">
+  <button id="button" onclick="checkAnswer2()">Unlock Next Clue!</button>
+
+  <script>
+    function checkAnswer2() {
+      var answer = document.getElementById("answer2").value.toLowerCase();
+      if (answer === "library") {
+        window.location.href = "clue3.html";
+      } else {
+        alert("Oops! That's not quite right. Keep searching for the correct answer.");
+      }
+    }
+  </script>
+</body>
+</html>
